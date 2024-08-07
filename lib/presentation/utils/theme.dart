@@ -133,6 +133,9 @@ final ThemeData theme = ThemeData(
       ),
     ),
   ),
+  progressIndicatorTheme: ProgressIndicatorThemeData(
+    color: colorScheme.secondary,
+  ),
   drawerTheme: const DrawerThemeData(
     backgroundColor: Colors.white,
     surfaceTintColor: Colors.white,
@@ -276,8 +279,12 @@ final ThemeData theme = ThemeData(
     unselectedItemColor: colorScheme.secondary,
   ),
   dialogTheme: DialogTheme(
-    backgroundColor: colorScheme.tertiary,
-    surfaceTintColor: colorScheme.tertiary,
+    backgroundColor: colorScheme.primaryContainer,
+    surfaceTintColor: colorScheme.onPrimaryContainer,
+    titleTextStyle: TextStyle(
+      color: colorScheme.onPrimaryContainer,
+      fontSize: 16,
+    ),
     shape: RoundedRectangleBorder(
       borderRadius: BorderRadius.circular(kRadiusCornerInside),
     ),

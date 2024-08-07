@@ -3,7 +3,6 @@ import 'package:app/presentation/utils/navigation/routes.dart';
 class AppNavigator {
   static goToSplash() => router.go(Routes.splash);
   static goToHome() => router.go(Routes.home);
-  static goToSettings() => router.go('${Routes.home}/${Routes.settings}');
   static goToVideoPlayer() => router.push('${Routes.home}/${Routes.videoPlayer}');
   static goBack() => router.pop();
   static goToUrl(String url) async {
