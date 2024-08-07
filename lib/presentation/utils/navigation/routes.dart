@@ -8,7 +8,7 @@ class Routes {
   static const String splash = '/splash';
   static const String home = '/home';
   static const String settings = 'settings';
-  static const String videoPlayer = '/video_player';
+  static const String videoPlayer = 'video_player';
 
   static const Map<String, String> names = {
     splash: 'splash',
