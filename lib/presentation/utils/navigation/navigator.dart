@@ -1,6 +1,6 @@
 import 'package:app/presentation/utils/navigation/routes.dart';
 
-class EpishiNavigator {
+class AppNavigator {
   static goToSplash() => router.go(Routes.splash);
   static goToHome() => router.go(Routes.home);
   static goToSettings() => router.go('${Routes.home}/${Routes.settings}');

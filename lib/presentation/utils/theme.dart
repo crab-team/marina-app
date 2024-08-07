@@ -68,34 +68,9 @@ extension ColorSchemeExtension on ColorScheme {
   Color get yellow => const Color(0xFFFFFB00);
   Color get green => const Color(0xFF02F900);
   Color get cyan => const Color(0xFF03FDFF);
-  Color get blue => const Color(0xFF0533FF);
+  Color get blue => const Color.fromARGB(247, 55, 132, 255);
   Color get purple => const Color(0xFF942092);
   Color get magenta => const Color(0xFFFF40FF);
-  Color get tahiti => const Color(0xFFB32525);
-  Color get baru => const Color(0xFF136AC6);
-  Color get fez => const Color(0xFFB680B9);
-  Color get ubud => const Color(0xFF88AB4D);
-  Color get bali => const Color(0xFFC3552A);
-  Color get punta => const Color(0xFF1C5D9B);
-  Color get costa => const Color(0xFF76C2F6);
-  Color get dubai => const Color(0xFF4E7A75);
-  Color get cairo => const Color(0xFFA58058);
-  Color get napoli => const Color(0xFF1B4BD4);
-  Color get paris => const Color(0xFF5B2FC4);
-  Color get niza => const Color(0xFF447383);
-  Color get amalfi => const Color(0xFF2E7FC1);
-  Color get phiphi => const Color(0xFFF1A54A);
-  Color get goya => const Color(0xFF885864);
-  Color get aesthetic => const Color(0xFF806E59);
-  Color get fashion => const Color(0xFFB780B9);
-  Color get urban => const Color(0xFF6A7B89);
-  Color get beach => const Color(0xFFEF865B);
-  Color get food => const Color(0xFFE673C1);
-  Color get nostalgia => const Color(0xFF286017);
-  Color get tropical => const Color(0xFF87AC4C);
-  Color get desert => const Color(0xFFCB944F);
-  Color get snow => const Color(0xFF34679D);
-  Color get extreme => const Color(0xFFA43333);
   Color get bw => const Color(0x001C1C1C);
   Color get base => const Color(0xFF1C1C1C);
 
@@ -112,27 +87,26 @@ extension ColorSchemeExtension on ColorScheme {
 }
 
 final ThemeData theme = ThemeData(
-  fontFamily: 'SFProText',
   useMaterial3: true,
   colorScheme: colorScheme,
   scaffoldBackgroundColor: colorScheme.surface,
   appBarTheme: AppBarTheme(backgroundColor: colorScheme.primary, elevation: 0, surfaceTintColor: colorScheme.primary),
   textTheme: const TextTheme(
-    displayLarge: TextStyle(fontSize: 34),
-    displayMedium: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
-    displaySmall: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
-    headlineMedium: TextStyle(fontSize: 17, fontWeight: FontWeight.bold),
-    headlineSmall: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
-    bodyLarge: TextStyle(fontSize: 16, fontWeight: FontWeight.normal),
-    bodyMedium: TextStyle(fontSize: 14, fontWeight: FontWeight.normal),
-    bodySmall: TextStyle(fontSize: 12, fontWeight: FontWeight.normal),
-    titleLarge: TextStyle(fontSize: 22, fontWeight: FontWeight.w700),
-    titleMedium: TextStyle(fontSize: 16, fontWeight: FontWeight.w700),
-    titleSmall: TextStyle(fontSize: 14, fontWeight: FontWeight.w700),
-    labelLarge: TextStyle(fontSize: 14, fontWeight: FontWeight.bold),
-    labelMedium: TextStyle(fontSize: 12, fontWeight: FontWeight.bold),
-    labelSmall: TextStyle(fontSize: 11),
-  ),
+      // displayLarge: TextStyle(fontSize: 34),
+      // displayMedium: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
+      // displaySmall: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+      // headlineMedium: TextStyle(fontSize: 17, fontWeight: FontWeight.bold),
+      // headlineSmall: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+      // bodyLarge: TextStyle(fontSize: 16, fontWeight: FontWeight.normal),
+      // bodyMedium: TextStyle(fontSize: 14, fontWeight: FontWeight.normal),
+      // bodySmall: TextStyle(fontSize: 12, fontWeight: FontWeight.normal),
+      // titleLarge: TextStyle(fontSize: 22, fontWeight: FontWeight.w700),
+      // titleMedium: TextStyle(fontSize: 16, fontWeight: FontWeight.w700),
+      // titleSmall: TextStyle(fontSize: 14, fontWeight: FontWeight.w700),
+      // labelLarge: TextStyle(fontSize: 14, fontWeight: FontWeight.bold),
+      // labelMedium: TextStyle(fontSize: 12, fontWeight: FontWeight.bold),
+      // labelSmall: TextStyle(fontSize: 11),
+      ),
   sliderTheme: SliderThemeData(
     activeTrackColor: colorScheme.secondary,
     inactiveTrackColor: colorScheme.secondary,
@@ -205,7 +179,7 @@ final ThemeData theme = ThemeData(
   iconButtonTheme: IconButtonThemeData(
     style: ButtonStyle(
       backgroundColor: WidgetStateProperty.all(Colors.transparent),
-      foregroundColor: WidgetStateProperty.all(colorScheme.primary),
+      foregroundColor: WidgetStateProperty.all(colorScheme.secondary),
       shape: WidgetStateProperty.all(
         RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(kRadiusCornerInside),
